@@ -12,7 +12,7 @@ JCalc是基于Java Swing的GUI计算器软件。作为实验作业的一部分�
 
 5. 使用Eclipse、NetBeans或Intellj作为开发环境，使用Maven管理项目，使用Git进行源代码控制；
 
-   <img src="/Users/JiaLi/Documents/Java课程/JCalc/README.assets/image-20200421010527897.png" alt="image-20200421010527897" style="zoom:50%;" />
+   <img src="https://github.com/JerryFaker/JCalc/blob/master/README.assets/image-20200421010527897.png?raw=true" alt="image-20200421010527897" style="zoom:50%;" />
 
 ## 功能
 
