@@ -86,42 +86,29 @@ public class CalcCore extends Observable {
 
     }
 
-    switch (s) {
-      case "=": {
-        setOngoing(mathBuddy(ongoing));
-        ans = Double.parseDouble(mathBuddy(ongoing));
-        isRefresh = true;
-        break;
+    if ("=".equals(s)) {
+      setOngoing(mathBuddy(ongoing));
+      ans = Double.parseDouble(mathBuddy(ongoing));
+      isRefresh = true;
+    } else if ("def".equals(s)) {
+      setDef(true);//开启定义变量模式
+    } else if ("ac".equals(s)) {
+      setOngoing("");//AC键：清空ongoing
+    } else if ("del".equals(s)) {
+      try {
+        setOngoing(ongoing
+            .substring(0, ongoing.length() - 1)
+        );
+      } catch (Exception e) {
+        //如果屏幕上没有任何内容还按删除键
+        //那么这个substring肯定会报错
+        //然而并不会进入Error模式，因为我觉得不至于
       }
-      case "def": {
-        setDef(true);//开启定义变量模式
-        break;
-      }
-      case "ac": {
-        setOngoing("");//AC键：清空ongoing
-        break;
-      }
-      case "del": {
-        try {
-          setOngoing(ongoing
-              .substring(0,ongoing.length()-1)
-          );
-        } catch (Exception e) {
-          //如果屏幕上没有任何内容还按删除键
-          //那么这个substring肯定会报错
-          //然而并不会进入Error模式，因为我觉得不至于
-        }
-        break;
-      }
-      case "point": {
-        input(".");
-        break;
-      }
-      default: {
-        setOngoing(ongoing+=s);
-        //正常情况下的非指令性input，咱先在ongoing里加上，语法正确性先不管
-        break;
-      }
+    } else if ("point".equals(s)) {
+      input(".");
+    } else {
+      setOngoing(ongoing += s);
+      //正常情况下的非指令性input，咱先在ongoing里加上，语法正确性先不管
     }
   }
 
@@ -154,11 +141,32 @@ public class CalcCore extends Observable {
   private String mathBuddy(String s) throws Exception {
     s = s.replace("×","*");
     s = s.replace("÷","/");
-    s = s.replace("x",Double.toString(x));
-    s = s.replace("y",Double.toString(y));
-    s = s.replace("pi",Double.toString(pi));
-    s = s.replace("Ans",Double.toString(ans));
-    System.out.println(engine.eval(s).toString());
+    s = checkChar(s,'x',x);
+    s = checkChar(s,'y',y);
+    s = checkChar(s,'p',pi);
+    s = checkChar(s,'A',ans);
     return engine.eval(s).toString();
   }
+
+  private boolean checkSur(String s, int i) throws Exception {
+    try {
+      Integer.parseInt(s.substring(i-1,i));
+    } catch (Exception e) {
+      return false;
+    }
+    return true;
+  }
+  private String checkChar(String s, char c, double num) throws Exception {
+    for (int i = 0; i < s.length(); i++) {
+      if (s.charAt(i)==c) {
+        int a = 1;
+        if (c=='A')
+          a = 3;
+        if (c=='p')
+          a = 2;
+        s = s.substring(0,i) + (checkSur(s,i) ? "*" : "") + num + s.substring(i+a);
+      }
+    }
+    return s;
+    }
 }

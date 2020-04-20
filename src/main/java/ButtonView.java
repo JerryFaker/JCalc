@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Driver;
 import java.util.ArrayList;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -54,11 +55,11 @@ class ButtonView extends JPanel {
       addActionListener(new Listener());
       try {
         Image img = ImageIO
-            .read(new File("src/main/resources/images/"+s+".png"))
+            .read(this.getClass().getClassLoader().getResourceAsStream("images/"+s+".png"))
             .getScaledInstance
                 (width,width,java.awt.Image.SCALE_SMOOTH);
         Image img1 = ImageIO
-            .read(new File("src/main/resources/images/"+s+"_pressed.png"))
+            .read(this.getClass().getClassLoader().getResourceAsStream("images/"+s+"_pressed.png"))
             .getScaledInstance
                 (width,width,java.awt.Image.SCALE_SMOOTH);
         //所有按钮都分为按下/空闲两种不同图片存放在子目录下

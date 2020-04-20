@@ -6,7 +6,9 @@ import java.awt.Font;
 import java.awt.FontFormatException;
 import java.awt.Image;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Observable;
 import java.util.Observer;
 import javax.imageio.ImageIO;
@@ -47,10 +49,10 @@ class OutputView extends JPanel implements Observer {
     status2 = new JLabel();
     try {
       Image def = ImageIO
-          .read(new File("src/main/resources/images/defMode.png"))
+          .read(this.getClass().getClassLoader().getResourceAsStream("images/defmode.png"))
           .getScaledInstance(40,23, Image.SCALE_SMOOTH);
       Image error = ImageIO
-          .read(new File("src/main/resources/images/warning.png"))
+          .read(this.getClass().getClassLoader().getResourceAsStream("images/warning.png"))
           .getScaledInstance(26,23, Image.SCALE_SMOOTH);
       status1.setIcon(new ImageIcon(error));
       status2.setIcon(new ImageIcon(def));
@@ -59,18 +61,21 @@ class OutputView extends JPanel implements Observer {
     }
     top.add(status1);
     top.add(status2);
-    status1.setVisible(true);
-    status2.setVisible(true);
+    status1.setVisible(false);
+    status2.setVisible(false);
     top.setLayout(new FlowLayout(FlowLayout.LEFT,20,20));
     //add(label);
   }
 
   private void setFont() {
     try {
+      InputStream in  = this.getClass().getClassLoader().getResourceAsStream("Futura-Medium.ttf");
+      //InputStream in = new FileInputStream("/src/main/java/Futura-Medium.ttf");
+      System.out.println(in);
       font = Font
           .createFont
               (Font.TRUETYPE_FONT,
-                  new File("src/main/resources/Futura-Medium.ttf"));
+                  in);
     } catch (FontFormatException e) {
       e.printStackTrace();
     } catch (IOException e) {

@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="JCalc:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JCalc_jar</output-path>
+    <root id="root">
+      <element id="archive" name="JCalc.jar">
+        <element id="module-output" name="JCalc" />
+      </element>
+    </root>
+  </artifact>
+</component>

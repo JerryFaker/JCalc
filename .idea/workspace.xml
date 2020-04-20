@@ -1,69 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JCalc:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="98ed0be8-4ddd-49f7-b64a-09f5dd390a28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ButtonView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CalcCore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CalcView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OutputView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Futura-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/(.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/(_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/)_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/+.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/+_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/-.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/-_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/0_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/1_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/2_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/3_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/4_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/5_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/6_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/7_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/8_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/9_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/=.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/=_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/ac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/ac_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/ans.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/ans_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/def.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/def_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/defmode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/del.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/del_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/pi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/pi_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/point_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/warning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/x_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/y_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/×.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/×_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/÷.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/÷_pressed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JCalc_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ButtonView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ButtonView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalcCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalcCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OutputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OutputView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/JCalc.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,15 +47,20 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -141,9 +97,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JCalc [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="JCalc [package]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Calculator" />
+        <item itemvalue="Maven.JCalc [package]" />
+        <item itemvalue="Maven.JCalc [clean]" />
         <item itemvalue="Application.CalcView" />
         <item itemvalue="Application.ButtonView" />
       </list>
@@ -160,6 +168,14 @@
       <option name="presentableId" value="Default" />
       <updated>1587133694079</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finish">
+      <created>1587358088551</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587358088551</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,5 +193,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
   </component>
 </project>
