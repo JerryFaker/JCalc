@@ -7,14 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98ed0be8-4ddd-49f7-b64a-09f5dd390a28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JCalc_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ButtonView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ButtonView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CalcCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalcCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalcView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalcView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/OutputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OutputView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/JCalc.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +48,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

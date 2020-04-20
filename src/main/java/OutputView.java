@@ -5,8 +5,6 @@ import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.FontFormatException;
 import java.awt.Image;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Observable;
@@ -25,6 +23,7 @@ class OutputView extends JPanel implements Observer {
   private JPanel bottom = new JPanel();
   private Font font;//屏幕的专有字体，一切为逼格服务
   private JLabel ongoing;
+  private JLabel previous;
   private JLabel status1;
   private JLabel status2;
 
@@ -38,13 +37,22 @@ class OutputView extends JPanel implements Observer {
     setChildPanel();
     setFont();
     //设置ongoing label的一些参数
+    //middle.setBackground(Color.red);
     ongoing = new JLabel();
     ongoing.setText("0");
     ongoing.setPreferredSize(new Dimension(300,50));
     ongoing.setHorizontalAlignment(JLabel.RIGHT);
-    ongoing.setVerticalAlignment(JLabel.NORTH);
+    ongoing.setVerticalAlignment(JLabel.TOP);
     ongoing.setFont(font.deriveFont(45f));
     bottom.add(ongoing);
+    previous = new JLabel();
+    previous.setText("");
+    previous.setPreferredSize(new Dimension(300,50));
+    previous.setHorizontalAlignment(JLabel.RIGHT);
+    previous.setVerticalAlignment(JLabel.CENTER);
+    previous.setFont(font.deriveFont(25f));
+    previous.setForeground(new Color(128,128,128));
+    middle.add(previous);
     status1 = new JLabel();
     status2 = new JLabel();
     try {
@@ -70,8 +78,6 @@ class OutputView extends JPanel implements Observer {
   private void setFont() {
     try {
       InputStream in  = this.getClass().getClassLoader().getResourceAsStream("Futura-Medium.ttf");
-      //InputStream in = new FileInputStream("/src/main/java/Futura-Medium.ttf");
-      System.out.println(in);
       font = Font
           .createFont
               (Font.TRUETYPE_FONT,
@@ -84,19 +90,21 @@ class OutputView extends JPanel implements Observer {
 
   }
   private void setChildPanel() {
-    top.setPreferredSize(new Dimension(300,70));
-    middle.setPreferredSize(new Dimension(300,30));
+    top.setPreferredSize(new Dimension(300,50));
+    middle.setPreferredSize(new Dimension(300,50));
     bottom.setPreferredSize(new Dimension(300,90));
     setLayout(new BorderLayout());
     add(top,BorderLayout.NORTH);
     add(middle,BorderLayout.CENTER);
     add(bottom,BorderLayout.SOUTH);
     bottom.setLayout(new FlowLayout(FlowLayout.RIGHT,25,10));
+    middle.setLayout(new FlowLayout(FlowLayout.RIGHT,22,0));
   }
 
   public void update(Observable o, Object arg) {
     core = (CalcCore)o;
     ongoing.setText(core.getOngoing());
+    previous.setText(core.getPrevious()+" ");
     status1.setVisible(core.isError());
     status2.setVisible(core.isDef());
   }

@@ -4,6 +4,7 @@ import javax.script.ScriptEngineManager;
 
 public class CalcCore extends Observable {
   private String ongoing = "";//屏幕显示的内容
+  private String previous = "";
   private double ans = 0;
   private double x = 0;
   private double y = 0;
@@ -51,6 +52,10 @@ public class CalcCore extends Observable {
     return ongoing;
   }
 
+  public String getPrevious() {
+    return previous;
+  }
+
   public void getCommand(String s) {
     System.out.println(s);
     try {
@@ -79,14 +84,15 @@ public class CalcCore extends Observable {
       //如果想调用上次运算结果，请按Ans键
       if (!s.equals("def")) {
         setOngoing("");
-        System.out.println("tiaoguorefresh");
       }
+        previous = "";
         isRefresh = false;
         //使得上次运算的结果可以直接进入def
 
     }
 
     if ("=".equals(s)) {
+      previous = ongoing;
       setOngoing(mathBuddy(ongoing));
       ans = Double.parseDouble(mathBuddy(ongoing));
       isRefresh = true;
@@ -94,6 +100,7 @@ public class CalcCore extends Observable {
       setDef(true);//开启定义变量模式
     } else if ("ac".equals(s)) {
       setOngoing("");//AC键：清空ongoing
+      previous = "";
     } else if ("del".equals(s)) {
       try {
         setOngoing(ongoing
@@ -133,6 +140,7 @@ public class CalcCore extends Observable {
   private void errorMode(String s) throws Exception {
     if (s.equals("ac")) {
       setOngoing("");
+      previous = "";
       setError(false);
       //按下AC键我们就还是好朋友
     }
