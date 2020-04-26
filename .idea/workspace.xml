@@ -7,12 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98ed0be8-4ddd-49f7-b64a-09f5dd390a28" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/^2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/^2_pressed.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ButtonView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ButtonView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CalcCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalcCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CalcView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalcView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OutputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OutputView.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,13 +74,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Calculator">
-    <configuration name="ButtonView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ButtonView" />
-      <module name="JCalc" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CalcView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CalcView" />
       <module name="JCalc" />
@@ -90,6 +83,13 @@
     </configuration>
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Calculator" />
+      <module name="JCalc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="JCalc" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,10 +148,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Calculator" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Maven.JCalc [package]" />
         <item itemvalue="Maven.JCalc [clean]" />
         <item itemvalue="Application.CalcView" />
-        <item itemvalue="Application.ButtonView" />
       </list>
     </recent_temporary>
   </component>

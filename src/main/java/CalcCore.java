@@ -1,6 +1,5 @@
 import java.util.Observable;
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
+import org.mariuszgromada.math.mxparser.Expression;
 
 public class CalcCore extends Observable {
   private String ongoing = "";//屏幕显示的内容
@@ -12,8 +11,6 @@ public class CalcCore extends Observable {
   private boolean isDef = false;
   private boolean isError = false;
   private boolean isRefresh = false;
-  private ScriptEngineManager mgr = new ScriptEngineManager();
-  ScriptEngine engine = mgr.getEngineByName("JavaScript");
 
   //Observer(OutputView)能观测到的变化:ongoing,isDef,isError，便于在屏幕上显示
   public void setOngoing(String s) {
@@ -151,9 +148,11 @@ public class CalcCore extends Observable {
     s = s.replace("÷","/");
     s = checkChar(s,'x',x);
     s = checkChar(s,'y',y);
-    s = checkChar(s,'p',pi);
     s = checkChar(s,'A',ans);
-    return engine.eval(s).toString();
+    System.out.println(s);
+    Expression e = new Expression(s);
+    double v = e.calculate();
+    return Double.toString(v);
   }
 
   private boolean checkSur(String s, int i) throws Exception {

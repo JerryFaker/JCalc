@@ -32,7 +32,7 @@ class ButtonView extends JPanel {
   //初始化所有按钮
   private void setButtons() {
     String[] words =
-        {"ac","(",")","del","÷","pi",
+        {"ac","(",")","del","÷","^2",
             "7","8","9","×","y","4","5",
             "6","-","x","1","2","3",
             "+","def","Ans","0","point","="};
